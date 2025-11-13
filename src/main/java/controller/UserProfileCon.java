@@ -26,7 +26,11 @@ public class UserProfileCon extends HttpServlet {
             throws ServletException, IOException {
 
         HttpSession session = request.getSession(false);
-        UserBean loginUser = (session == null) ? null : (UserBean) session.getAttribute("loginUser");
+        UserBean loginUser = null;
+
+        if (session != null) {
+            loginUser = (UserBean) session.getAttribute("loginUser");
+        }
 
         if (loginUser == null) {
             response.sendRedirect(request.getContextPath() + "/login.do");
