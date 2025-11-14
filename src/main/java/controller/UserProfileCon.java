@@ -20,7 +20,7 @@ public class UserProfileCon extends HttpServlet {
     /**
      * 공통 요청 처리 메서드  
      * GET/POST 요청 모두 로그인 여부를 확인하고  
-     * 로그인된 사용자에게 프로필 페이지를 전달한다.
+     * 로그인된 사용자에게 프로필 페이지를 전달
      */
     protected void doProc(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

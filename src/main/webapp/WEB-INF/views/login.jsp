@@ -9,19 +9,7 @@
     <link rel="stylesheet" href="${pageContext.request.contextPath}/css/index.css">
 </head>
 <body>
-    <!-- header -->
-    <header class="layout-header">
-        <h1><a href="${pageContext.request.contextPath}/">DCU STUDY</a></h1>
-
-        <div>
-            <a href="${pageContext.request.contextPath}/profile.do">프로필</a>
-            <a href="${pageContext.request.contextPath}/login.do">로그인</a>
-            <a href="${pageContext.request.contextPath}/logout.do">
-                <button type="button">로그아웃</button>
-            </a>
-        </div>
-    </header>
-
+	<%@ include file ="header.jsp" %>
     <!-- main -->
     <main class="login">
         <h2 class="main-title">로그인</h2>
@@ -42,10 +30,6 @@
             <button class="login-btn" type="submit">로그인</button>
         </form>
     </main>
-
-    <!-- footer -->
-    <footer class="layout-footer">
-        Copyright 2025. DCU practice.
-    </footer>
+	<%@ include file ="footer.jsp" %>
 </body>
 </html>
