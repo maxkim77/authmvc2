@@ -1,5 +1,14 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="EUC-KR">
+    <title>DCU STUDY - 로그인</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/common.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/index.css">
+</head>
+<body>
     <!-- header -->
     <header class="layout-header">
         <h1><a href="${pageContext.request.contextPath}/">DCU STUDY</a></h1>

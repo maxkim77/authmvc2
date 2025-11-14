@@ -4,3 +4,5 @@
     <footer class="layout-footer">
     Copyright 2025. DCU practice.
     </footer>
+    </body>
+</html>
