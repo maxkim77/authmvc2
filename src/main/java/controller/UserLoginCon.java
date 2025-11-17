@@ -3,13 +3,15 @@ package controller;
 import java.io.IOException;
 
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
-
 import model.UserBean;
 import model.UserDAO;
 
-@WebServlet("/login.do")
+/**
+ * UserLoginCon
+ * - 로그인 요청을 처리하는 컨트롤러(Servlet)
+ * - "/login.do" URL로 들어오는 GET/POST 요청을 처리
+ */
 public class UserLoginCon extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
@@ -18,12 +20,6 @@ public class UserLoginCon extends HttpServlet {
     public UserLoginCon() {
         super();
     }
-
-    /** 
-     * 공통 요청 처리 메서드 
-     * - GET 요청 시 로그인 화면을 출력
-     * - POST 요청 시 로그인 검증을 수행
-     */
     protected void doProc(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
@@ -66,20 +62,10 @@ public class UserLoginCon extends HttpServlet {
                    .forward(request, response);
         }
     }
-
-    /** 
-     * GET 요청 처리: 로그인 화면 출력
-     */
-    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         doProc(request, response);
     }
-
-    /** 
-     * POST 요청 처리: 로그인 검증
-     */
-    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         doProc(request, response);

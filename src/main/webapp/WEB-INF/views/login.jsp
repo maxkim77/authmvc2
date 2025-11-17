@@ -7,7 +7,6 @@
         <h2 class="main-title">로그인</h2>
         <p class="main-desc">아이디와 비밀번호를 입력하고 로그인하세요</p>
 
-        <!-- 에러 메시지 (있으면 출력, 없으면 빈 문자열) -->
         <p style="color:red;">${error}</p>
 
         <form id="main-form" method="post" action="${pageContext.request.contextPath}/login.do">
